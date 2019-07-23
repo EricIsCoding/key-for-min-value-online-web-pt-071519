@@ -4,8 +4,13 @@ require 'pry'
 
 def key_for_min_value(name_hash)
   answer = nil
-  smallest = name_hash.first
+  smallest = name_hash.values[0]
   name_hash.each do |key, value|
+    if smallest == value
+      answer = key
+    elsif smallest < value
+      answer = key
+    end
   end
   answer
 end
