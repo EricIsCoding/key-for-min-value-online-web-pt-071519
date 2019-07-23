@@ -3,8 +3,7 @@
 require 'pry'
 
 def key_for_min_value(name_hash)
-  answer = nil
-  smallest = 
+  if
   name_hash.each do |key, value|
     
   end
